@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <Pane layoutX="0.0" layoutY="7.0" prefHeight="578.9999000000025" prefWidth="394.0">
+      <children>
+        <Label fx:id="lbHeader" alignment="CENTER" contentDisplay="CENTER" focusTraversable="true" layoutX="105.0" layoutY="33.0" prefHeight="28.1328125" prefWidth="185.0" text="Label">
+          <font>
+            <Font name="Comic Sans MS" size="15.0" />
+          </font>
+        </Label>
+        <VBox alignment="TOP_CENTER" layoutX="63.0" layoutY="107.0" prefHeight="137.0" prefWidth="273.0" spacing="20.0">
+          <children>
+            <TextField fx:id="txtYourName" focusTraversable="true" prefHeight="50.0" prefWidth="200.0" promptText="Enter Your Name" />
+            <TextField fx:id="txtZengName" focusTraversable="true" prefHeight="50.0" prefWidth="200.0" promptText="Enter Zeng Name" />
+            <Button defaultButton="true" focusTraversable="true" mnemonicParsing="false" onAction="#calculateZeng" prefHeight="30.0" text="Calculate" />
+          </children>
+          <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+          </padding>
+        </VBox>
+        <Button layoutX="265.0" layoutY="545.0" mnemonicParsing="false" onAction="#clearBtn" text="Clear" />
+      </children>
+    </Pane>
+    <ImageView fitHeight="265.0" fitWidth="423.5159707447839" layoutX="1.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@zeng.png" />
+      </image>
+    </ImageView>
+    <TextArea id="txt" fx:id="txtResult" blendMode="DARKEN" editable="false" focusTraversable="true" layoutX="63.0" layoutY="280.0" opacity="1.0" prefHeight="213.0" prefWidth="281.0" text="" visible="true" wrapText="true" />
+  </children>
+</AnchorPane>
